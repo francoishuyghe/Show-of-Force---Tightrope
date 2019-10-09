@@ -1,0 +1,19 @@
+# Documentation: https://roots.io/trellis/docs/local-development-setup/
+# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
+# Define accompanying passwords/secrets in group_vars/development/vault.yml
+
+wordpress_sites:
+  tightropefilm.com:
+    site_hosts:
+      - canonical: tightropefilm.test
+        redirects:
+          - www.tightropefilm.test
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: francois@13milliseconds.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: self-signed
+    cache:
+      enabled: false
