@@ -1,0 +1,28 @@
+body{
+    background: theme-color(darkblue);
+    color: theme-color(white);
+    font-family: 'HelveticaNeue', Tahoma, Verdana, sans-serif
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2, h3{
+    font-family: 'Miller', serif
+}
+
+h2{
+    &:after{
+        content: ' —'
+    }
+}
+
+a.btn{
+    background: theme-color(primary);
+    color: theme-color(black);
+    text-transform: uppercase;
+    border-radius: 2em;
+    padding: .5em 1.5em;
+    margin-right: $grid-gutter / 2;
+}

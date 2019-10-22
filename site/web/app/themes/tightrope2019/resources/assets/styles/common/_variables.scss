@@ -2,9 +2,44 @@
 @import "~bootstrap/scss/functions";
 
 $theme-colors: (
-  primary: #525ddc
+  primary: #45ACD9,
+  darkblue: #0E1724,
+  white: #ffffff,
+  black: #000000
 );
+
+$grid-gutter: 50px;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueLTStd-Md.woff') format('woff'),
+      url('../fonts/HelveticaNeueLTStd-Md.ttf') format('truetype'),
+      url('../fonts/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miller';
+  src: url('../fonts/Miller-TextRoman.woff2') format('woff2'),
+      url('../fonts/Miller-TextRoman.woff') format('woff'),
+      url('../fonts/Miller-TextRoman.ttf') format('truetype'),
+      url('../fonts/Miller-TextRoman.svg#Miller-TextRoman') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Acherus Grotesque';
+  src: url('../fonts/AcherusGrotesque-Regular.woff2') format('woff2'),
+      url('../fonts/AcherusGrotesque-Regular.woff') format('woff'),
+      url('../fonts/AcherusGrotesque-Regular.ttf') format('truetype'),
+      url('../fonts/AcherusGrotesque-Regular.svg#AcherusGrotesque-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,111 @@
+.page.home{
+    section{
+        margin-bottom: 100px;
+
+        &#top{
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center bottom;
+            position: relative;
+
+            .trailer-btn{
+                position: absolute;
+                bottom: $grid-gutter;
+                left: $grid-gutter;
+                text-transform: uppercase;
+                
+                a.btn{
+                    cursor: pointer;
+                    transition: .3s;
+                    color: theme-color(black);
+                    padding: 1em 1.3em;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }   
+                }
+            }
+
+            .trailer-player{
+                display: none;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(0,0,0,0);
+                transition: background-color .3s;
+                
+                &.active{
+                    display: flex;
+                    background-color: transparentize(theme-color(black), .2);
+                }
+
+                .player-wrap{
+                    position: relative;
+                    overflow: hidden;
+                    padding-top: 56.25%;
+
+                    iframe{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                    }
+                }
+            }
+        }
+
+        &#carousel{
+            position: relative;
+
+            .arrow{
+                position: absolute;
+                height: 100%;
+                top: 0;
+                z-index: 9;
+                display: flex!important;
+                align-items: center;
+                padding: $grid-gutter / 2;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover{
+                    background-color: transparentize(theme-color(black), .4);
+                }
+
+                &.nextArrow{
+                    right: 0;
+                }
+
+                &.prevArrow{
+                    left: 0;
+                }
+            }
+
+            .slick-slide{
+                margin: 0 $grid-gutter / 2;
+                opacity: .5;
+                transition: .3s;
+
+                &.slick-current{
+                    opacity: 1;
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        &#screenings{
+            .screenings{
+                padding-bottom: $grid-gutter;
+                border-right: 1px solid theme-color(white);
+            }
+        }
+    }
+}

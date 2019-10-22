@@ -27,16 +27,45 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "advanced-custom-fields/advanced-custom-fields-pro",
+          "version": "5.8.5",
+          "type": "wordpress-plugin",
+          "dist": {
+              "type": "zip",
+              "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%version}"
+          },
+          "require": {
+              "composer/installers": "^1.4",
+              "ffraenz/private-composer-installer": "^2.0"
+          }
+      }
+  },
+  {
+    "type": "composer",
+    "url": "https://composer.deliciousbrains.com/B702F0736C881925335BE827F608FB1F"
+}
   ],
   "require": {
     "php": ">=7.1",
     "composer/installers": "^1.7",
     "vlucas/phpdotenv": "^3.4.0",
     "oscarotero/env": "^1.2.0",
-    "roots/wordpress": "5.2.3",
+    "roots/wordpress": "5.2.4",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.8.4",
+    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "*",
+    "deliciousbrains-plugin/wp-offload-media": "*",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.2",
+    "wpackagist-plugin/classic-editor": "^1.5",
+    "wpackagist-plugin/easy-smooth-scroll-links": "^2.1.1",
+    "wpackagist-plugin/wp-fastest-cache": "^0.8.9.3",
+    "yoast/wordpress-seo": "^12.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
