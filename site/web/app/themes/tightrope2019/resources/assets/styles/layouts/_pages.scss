@@ -1,7 +1,5 @@
 .page.home{
     section{
-        margin-bottom: 100px;
-
         &#top{
             min-height: 100vh;
             background-size: cover;
@@ -59,37 +57,56 @@
             }
         }
 
+        &#watch{
+            p{
+                font-size: 1.3em;
+            }
+        }
+
         &#carousel{
             position: relative;
 
             .arrow{
                 position: absolute;
                 height: 100%;
+                width: 25%;
                 top: 0;
                 z-index: 9;
                 display: flex!important;
                 align-items: center;
-                padding: $grid-gutter / 2;
+                justify-content: center;
                 cursor: pointer;
                 transition: .3s;
 
-                &:hover{
-                    background-color: transparentize(theme-color(black), .4);
+                i{
+                    transition: .3s;
                 }
 
                 &.nextArrow{
                     right: 0;
+
+                    &:hover{
+                        i{
+                            transform: translate(10px);
+                        }
+                    }
                 }
 
                 &.prevArrow{
                     left: 0;
+
+                    &:hover{
+                        i{
+                            transform: translate(-10px);
+                        }
+                    }
                 }
             }
 
             .slick-slide{
                 margin: 0 $grid-gutter / 2;
                 opacity: .5;
-                transition: .3s;
+                transition: opacity .3s;
 
                 &.slick-current{
                     opacity: 1;
@@ -106,6 +123,14 @@
                 padding-bottom: $grid-gutter;
                 border-right: 1px solid theme-color(white);
             }
+        }
+    }
+}
+
+.page.about{
+    #credits{
+        .list{
+            columns: 3;
         }
     }
 }

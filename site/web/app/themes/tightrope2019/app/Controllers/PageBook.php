@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Controllers;
+
+use Sober\Controller\Controller;
+
+class PageBook extends Controller
+{
+
+    public function data() {
+
+        $data['book_cover'] = get_field('book_cover');
+        $data['authors_bio'] = get_field('authors_bio');
+        $data['authors_photo'] = get_field('authors_photo');
+        $data['buying_options'] = get_field('buying_options');
+
+        return $data;
+    }
+}

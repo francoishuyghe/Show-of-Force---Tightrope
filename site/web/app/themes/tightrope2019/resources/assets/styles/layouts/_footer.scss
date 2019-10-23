@@ -1,4 +1,19 @@
 footer{
     background: theme-color(black);
-    padding: $grid-gutter;
+    padding: $grid-gutter $grid-gutter $grid-gutter/2;
+
+    section{
+        margin-bottom: 0;
+
+        h3{
+            font-size: 1.2em;
+        }
+    }
+
+    .legal{
+        text-align: center;
+        font-size: .8em;
+        opacity: .6;
+        margin-top: $grid-gutter/2;
+    }
 }

@@ -1,15 +1,25 @@
 body{
     background: theme-color(darkblue);
     color: theme-color(white);
-    font-family: 'HelveticaNeue', Tahoma, Verdana, sans-serif
+    font-family: 'Acherus Grotesque', Tahoma, Verdana, sans-serif;
+
+    &:not(.home) > .wrap{
+        min-height: 100vh;
+        padding-top: 150px;
+    }
+}
+
+section{
+    margin-bottom: 200px;
 }
 
 img{
     max-width: 100%;
 }
 
-h1, h2, h3{
-    font-family: 'Miller', serif
+h2{
+    font-family: 'Miller', serif;
+    margin-bottom: $grid-gutter;
 }
 
 h2{
@@ -23,6 +33,13 @@ a.btn{
     color: theme-color(black);
     text-transform: uppercase;
     border-radius: 2em;
-    padding: .5em 1.5em;
+    padding: .5em 1.5em .3em;
+    margin-right: 25px;
+    font-size: .9em;
+    letter-spacing: .05em;
     margin-right: $grid-gutter / 2;
+
+    &:hover{
+        background: lighten(theme-color(primary), 10%);
+    }
 }

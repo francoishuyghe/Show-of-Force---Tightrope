@@ -4,13 +4,29 @@
 
 .banner {
   padding: $grid-gutter/2 $grid-gutter;
-  background: transparent;
+  background-color: transparent;
   position: fixed;
   z-index: 99;
   width: 100%;
-  transition: .3s;
+  transition: background-color .3s;
   display: flex;
   justify-content: space-between;
+
+  .brand{
+      color: theme-color(white);
+      text-decoration: none;
+
+      h1{
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: .1em;
+        margin-bottom: 0px;
+      }
+
+      h3{
+        font-size: 1.2em;
+      }
+  }
 
     .nav {
       a {
@@ -22,6 +38,6 @@
     }
 
   &.active{
-    background: theme-color(black);
+    background-color: theme-color(black);
   }
 }
