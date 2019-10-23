@@ -124,10 +124,28 @@
                 border-right: 1px solid theme-color(white);
             }
         }
+
+        &#read{
+            img{
+                display: block;
+                max-height: 500px;
+                margin: 0 auto;
+            }
+        }
     }
 }
 
 .page.about{
+    #team{
+        .person{
+            margin-bottom: $grid-gutter/2;
+            
+            .portrait{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
     #credits{
         .list{
             columns: 3;
