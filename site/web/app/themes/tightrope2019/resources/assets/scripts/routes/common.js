@@ -13,11 +13,9 @@ export default {
     const trailerButton = $('.trailer-btn');
     
     if (trailerButton) {
-      console.log('Player init');
       const trailerPlayer = $('.trailer-player');
       const trailerIframe = $('.trailer-player iframe');
       const link = trailerIframe.attr('source');
-      console.log(link)
 
       trailerButton.click(function () {
         trailerIframe.attr('src', link)

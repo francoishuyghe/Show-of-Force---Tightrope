@@ -5,7 +5,7 @@
 wordpress_sites:
   tightropefilm.com:
     site_hosts:
-      - canonical: tightropefilm.showofforce.com
+      - canonical: staging.tightrope.film
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)

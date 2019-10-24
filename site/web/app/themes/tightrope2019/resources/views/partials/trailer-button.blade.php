@@ -1,5 +1,5 @@
 <div class="trailer-btn">
-        <a class="btn"><i class="fas fa-play"></i></a> Watch the trailer
+        <a><img src="@asset('images/play-button.svg')"></a> Watch the trailer
     </div>
     <div class="trailer-player">
         <div class="container">

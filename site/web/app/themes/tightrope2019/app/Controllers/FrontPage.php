@@ -12,6 +12,7 @@ class FrontPage extends Controller
         $data['trailer'] = get_field('trailer');
         $data['about_text'] = get_field('about_text');
         $data['carousel'] = get_field('carousel');
+        $data['images'] = get_field('images');
         $data['about_book'] = get_field('about_book');
         $data['book_image'] = get_field('book_image');
         $data['book_link'] = get_field('book_link');
