@@ -2,6 +2,11 @@ footer{
     background: theme-color(black);
     padding: $grid-gutter $grid-gutter $grid-gutter/2;
 
+    .widgets{
+        display: flex;
+        justify-content: space-between;
+    }
+
     section{
         margin-bottom: 0;
 

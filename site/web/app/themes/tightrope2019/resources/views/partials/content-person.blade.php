@@ -7,7 +7,7 @@
     <div class="col-md-8">
       <header>
         <h1 class="entry-title">{!! get_the_title() !!}</h1>
-        <h3>{{ the_field('role') }}</h3>
+        <h4>{{ the_field('role') }}</h4>
       </header>
       <div class="entry-content">
         @php the_content() @endphp

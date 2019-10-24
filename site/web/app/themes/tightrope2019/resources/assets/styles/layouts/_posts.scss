@@ -1,0 +1,15 @@
+.single-team{
+    .container{
+        h1{
+            margin-bottom: 0;
+        }
+
+        h4{
+            margin-bottom: $grid-gutter;
+        }
+
+        a.btn{
+            margin-top: $grid-gutter;
+        }
+    }
+}

@@ -7,7 +7,7 @@
                 <a href="{{ the_permalink() }}">
                     <img class="portrait" src="{{ the_post_thumbnail_url() }}" />
                 </a>
-                <h5>{!! get_the_title() !!}</h5>
+                <h4>{!! get_the_title() !!}</h4>
                 <p>{{ the_field('role') }}</p>
             </div>
         @endwhile

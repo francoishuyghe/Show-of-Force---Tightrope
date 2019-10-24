@@ -1,14 +1,14 @@
 export default {
   init() {
-    // JavaScript to be fired on the home page
-
-    
+    // JavaScript to be fired on the about us page
 
     //Carousel
     $('.slides').slick({
       centerMode: true,
-      centerPadding: '25%',
+      centerPadding: '20px',
       slidesToShow: 1,
+      autoplay: true,
+      fade: true,
       prevArrow: '.prevArrow',
       nextArrow: '.nextArrow',
       responsive: [
@@ -26,8 +26,5 @@ export default {
         },
       ],
     });
-  },
-  finalize() {
-    // JavaScript to be fired on the home page, after the init JS
   },
 };

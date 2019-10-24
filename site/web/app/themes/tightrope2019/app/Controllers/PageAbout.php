@@ -23,6 +23,7 @@ class PageAbout extends Controller
     public function data() {
 
         $data['credits'] = get_field('credits');
+        $data['funders'] = get_field('funders');
 
         return $data;
     }

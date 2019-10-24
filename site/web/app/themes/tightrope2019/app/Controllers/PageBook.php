@@ -13,6 +13,8 @@ class PageBook extends Controller
         $data['authors_bio'] = get_field('authors_bio');
         $data['authors_photo'] = get_field('authors_photo');
         $data['buying_options'] = get_field('buying_options');
+        $data['tagline'] = get_field('tagline');
+        $data['praise'] = get_field('praise');
 
         return $data;
     }

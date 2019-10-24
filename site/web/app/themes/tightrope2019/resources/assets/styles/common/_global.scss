@@ -17,7 +17,7 @@ img{
     max-width: 100%;
 }
 
-h2{
+h2, h4{
     font-family: 'Miller', serif;
     margin-bottom: $grid-gutter;
 }
@@ -26,6 +26,10 @@ h2{
     &:after{
         content: ' —'
     }
+}
+
+p{
+    line-height: 1.8;
 }
 
 a.btn{
@@ -37,9 +41,59 @@ a.btn{
     margin-right: 25px;
     font-size: .9em;
     letter-spacing: .05em;
-    margin-right: $grid-gutter / 2;
 
     &:hover{
         background: lighten(theme-color(primary), 10%);
+    }
+}
+
+
+//Trailer player
+.trailer-btn{
+    text-transform: uppercase;
+    
+    a.btn{
+        cursor: pointer;
+        transition: .3s;
+        color: theme-color(black);
+        padding: 1em 1.3em;
+
+        &:hover{
+            transform: scale(1.1);
+        }   
+    }
+}
+
+.trailer-player{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .3s;
+    
+    &.active{
+        display: flex;
+        background-color: transparentize(theme-color(black), .2);
+    }
+
+    .player-wrap{
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     }
 }
