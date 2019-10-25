@@ -25,6 +25,8 @@ class PageAbout extends Controller
         $data['credits'] = get_field('credits');
         $data['funders'] = get_field('funders');
 
+        $data['trailer'] = get_field('trailer', 'option');
+
         return $data;
     }
 }

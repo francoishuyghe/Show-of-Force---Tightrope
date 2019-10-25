@@ -7,13 +7,13 @@
             <?php
 
             // Load value.
-            $iframe = get_field('trailer', 'option');
+            $iframe = $data['trailer'];
             
             // Use preg_match to find iframe src.
             preg_match('/src="(.+?)"/', $iframe, $matches);
             $src = $matches[1];
             
-            // Add extra parameters to src and replcae HTML.
+            // Add extra parameters to src and replace HTML.
             $params = array(
                 'controls'  => 0,
                 'hd'        => 1,

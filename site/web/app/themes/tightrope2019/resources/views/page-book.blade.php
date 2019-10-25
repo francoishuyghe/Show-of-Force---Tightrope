@@ -11,7 +11,14 @@
               <img src="{{ $data['book_cover']['url']}}" />
             </div>
         <div class="col-md-6">
-          {!! $data['buying_options'] !!}
+            <h3>TIGHTROPE</h3>
+            <h5>Americans Reaching for Hope</h5>
+            <p>By Nicholas D. Kristof and Sheryl WuDunn</p>
+            <a class="btn" href="{{ $data['book_link'] }}" target="_blank" rel="noopener">Buy Now</a>
+
+            <div class="extra">
+              {!! $data['buying_options'] !!}
+            </div>
         </div>
       </div>
     </section>

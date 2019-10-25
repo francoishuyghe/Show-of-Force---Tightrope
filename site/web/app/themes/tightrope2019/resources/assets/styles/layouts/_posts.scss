@@ -11,5 +11,17 @@
         a.btn{
             margin-top: $grid-gutter;
         }
+
+        @include media-breakpoint-down(sm){
+            h1{
+                margin-top: $grid-gutter / 2;
+                font-size: 1.8em;
+            }
+
+            h4{
+                font-size: 1.3em;
+                margin-bottom: 25px;
+            }
+        }
     }
 }

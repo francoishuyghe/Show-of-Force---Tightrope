@@ -27,6 +27,7 @@
 
       h3{
         font-size: 1.2em;
+        margin-bottom: 0;
       }
   }
 
@@ -41,5 +42,15 @@
 
   &.active{
     background-color: theme-color(black);
+  }
+
+  @include media-breakpoint-down(sm){
+    padding: 10px $grid-gutter/2;
+    flex-direction: column;
+    text-align: center;
+
+    .nav{
+      justify-content: center;
+    }
   }
 }

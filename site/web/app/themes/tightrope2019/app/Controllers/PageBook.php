@@ -16,6 +16,9 @@ class PageBook extends Controller
         $data['tagline'] = get_field('tagline');
         $data['praise'] = get_field('praise');
 
+        $data['book_image'] = get_field('book_image', 'option');
+        $data['book_link'] = get_field('book_link', 'option');
+
         return $data;
     }
 }

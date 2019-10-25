@@ -1,24 +1,44 @@
 footer{
     background: theme-color(black);
-    padding: $grid-gutter $grid-gutter $grid-gutter/2;
+    padding: 20px;
 
-    .widgets{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    section{
-        margin-bottom: 0;
-
+    
+    section,
+    section:first-child{
+        margin: 0 0 $grid-gutter / 2;
+        padding: 0;
+        
         h3{
             font-size: 1.2em;
+            margin-bottom: 0;
+        }
+
+        img{
+            margin-top: 5px;
         }
     }
-
+    
     .legal{
-        text-align: center;
         font-size: .8em;
         opacity: .6;
         margin-top: $grid-gutter/2;
+    }
+    
+    @include media-breakpoint-up(md){
+        padding: $grid-gutter $grid-gutter $grid-gutter/2;
+
+        .widgets{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section,
+        section:first-child{
+        margin: 0;
+        }
+
+        .legal{
+            text-align: center;
+        }
     }
 }

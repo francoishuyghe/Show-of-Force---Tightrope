@@ -15,13 +15,14 @@ export default {
         {
           breakpoint: 768,
           settings: {
-            centerPadding: '40px',
+            centerPadding: '20px',
           },
         },
         {
           breakpoint: 480,
           settings: {
-            centerPadding: '40px',
+            centerMode: false,
+            centerPadding: '20px',
           },
         },
       ],
