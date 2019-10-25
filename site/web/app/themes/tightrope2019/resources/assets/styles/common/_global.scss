@@ -30,6 +30,10 @@ img{
 h2, h4{
     font-family: 'Miller', serif;
     margin-bottom: $grid-gutter;
+
+    @include media-breakpoint-down(sm){
+        margin-bottom: $grid-gutter / 2;
+    }
 }
 
 h2{

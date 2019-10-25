@@ -1,7 +1,7 @@
 footer{
     background: theme-color(black);
-    padding: 20px;
-
+    padding: $grid-gutter / 2;
+    text-align: center;
     
     section,
     section:first-child{
@@ -30,15 +30,12 @@ footer{
         .widgets{
             display: flex;
             justify-content: space-between;
+            text-align: left;
         }
 
         section,
         section:first-child{
         margin: 0;
-        }
-
-        .legal{
-            text-align: center;
         }
     }
 }

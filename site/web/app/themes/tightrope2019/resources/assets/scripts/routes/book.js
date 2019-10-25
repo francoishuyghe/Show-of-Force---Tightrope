@@ -21,6 +21,8 @@ export default {
         {
           breakpoint: 480,
           settings: {
+            adaptiveHeight: true,
+            autoplay: false,
             centerPadding: '40px',
           },
         },
