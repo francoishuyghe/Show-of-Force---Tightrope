@@ -15,7 +15,7 @@
             @include media-breakpoint-down(sm){
                 .trailer-btn{
                     position: absolute;
-                    bottom: $grid-gutter * 2;
+                    bottom: $grid-gutter * 3;
                     left: $grid-gutter / 2;
                 }
             }
