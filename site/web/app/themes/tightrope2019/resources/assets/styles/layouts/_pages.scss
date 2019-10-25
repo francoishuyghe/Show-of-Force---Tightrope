@@ -11,6 +11,10 @@
                 bottom: $grid-gutter;
                 left: $grid-gutter;
             }
+
+            @include media-breakpoint-down(sm){
+                padding-bottom: $grid-gutter;
+            }
         }
 
         &#watch{
@@ -155,6 +159,7 @@
     #buy{
         .tagline{
             margin-bottom: $grid-gutter * 2;
+            letter-spacing: 0;
         }
 
         h3{
@@ -170,18 +175,18 @@
         img{
             display: block;
             max-height: 500px;
-            margin: 0 auto $grid-gutter;
+            margin: 0 0 $grid-gutter;
         }
 
         @include media-breakpoint-down(sm){
             .tagline{
                 margin-bottom: $grid-gutter;
                 font-size: 1.2em;
-                letter-spacing: 0;
                 line-height: 1.5;
             }
 
             img{
+                margin: 0 auto $grid-gutter;
                 max-height: 400px;
             }
         }

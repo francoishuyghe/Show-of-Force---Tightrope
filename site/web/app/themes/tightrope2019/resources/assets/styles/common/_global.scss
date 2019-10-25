@@ -61,6 +61,37 @@ a.btn{
     }
 }
 
+@include media-breakpoint-down(sm){
+    .long-content{
+        max-height: 300px;
+        overflow: hidden;
+
+        &:after{
+            content: "Read More";
+            padding: $grid-gutter / 2;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            color: theme-color(primary);
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(theme-color(darkblue),0) 0%, rgba(theme-color(darkblue),1) 50%, rgba(theme-color(darkblue),1) 100%);
+        }
+
+        &.active{
+            max-height: none;
+
+            &:after{
+                content: '';
+                display: none;
+            }
+        }
+    }
+}
+
 
 //Trailer player
 .trailer-btn{

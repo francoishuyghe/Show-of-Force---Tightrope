@@ -9,6 +9,12 @@ export default {
       }
     });
 
+    //Read More
+    $('.long-content').click(function (e) { 
+      console.log(e.target);
+      $(e.target).addClass('active');
+    });
+
     //Trailer player
     const trailerButton = $('.trailer-btn');
     

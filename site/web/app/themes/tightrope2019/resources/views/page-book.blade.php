@@ -7,10 +7,10 @@
     <section id="buy">
       <h3 class="tagline">{{ $data['tagline'] }}</h3>
       <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
               <img src="{{ $data['book_cover']['url']}}" />
             </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h3>TIGHTROPE</h3>
             <h5>Americans Reaching for Hope</h5>
             <p>By Nicholas D. Kristof and Sheryl WuDunn</p>
@@ -26,7 +26,9 @@
     <section class="row">
       <div class="col-md-8">
         <h2>About</h2>
-        @php the_content() @endphp
+        <div class="long-content">
+          @php the_content() @endphp
+        </div>
       </div>
 
       <div class="col-md-4">
