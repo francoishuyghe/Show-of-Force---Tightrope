@@ -13,7 +13,11 @@
             }
 
             @include media-breakpoint-down(sm){
-                padding-bottom: $grid-gutter;
+                .trailer-btn{
+                    position: absolute;
+                    bottom: $grid-gutter * 2;
+                    left: $grid-gutter / 2;
+                }
             }
         }
 
