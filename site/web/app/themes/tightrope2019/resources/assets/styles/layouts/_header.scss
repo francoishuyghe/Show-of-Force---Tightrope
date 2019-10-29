@@ -41,18 +41,18 @@
     }
 
   @include media-breakpoint-down(sm){
-    position: absolute;
-    padding: 20px $grid-gutter/2;
+    position: fixed;
+    padding: 10px 25px 5px;
     flex-direction: column;
     text-align: center;
 
     .nav{
-      display: none;
+      //display: none;
       justify-content: center;
     }
 
     &.active{
-      background-color: transparent;
+      //background-color: transparent;
     }
   }
 }
