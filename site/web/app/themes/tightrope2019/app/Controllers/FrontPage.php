@@ -8,6 +8,8 @@ class FrontPage extends Controller
 {
     public function data()
     {
+        $data['website_intro'] = get_field('website_intro');
+        $data['sof_logo'] = get_field('sof_logo');
         $data['banner_image'] = get_field('banner_image');
         $data['about_text'] = get_field('about_text');
         $data['carousel'] = get_field('carousel');

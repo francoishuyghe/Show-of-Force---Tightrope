@@ -5,6 +5,7 @@
         @foreach ($data['images'] as $image)
             <div class="slide">
                 <img src="{{ $image['url'] }}" />
+                <p class="caption">{{ $image['caption'] }}</p>
             </div>
         @endforeach
     </div>

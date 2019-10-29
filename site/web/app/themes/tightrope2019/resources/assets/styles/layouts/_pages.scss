@@ -1,15 +1,66 @@
 .page.home{
+    .banner {
+        margin-top: -100%;
+        &.active{
+            margin-top: 0;
+        }
+      }
     section{
         &#top{
             min-height: 100vh;
-            background-size: cover;
-            background-position: center bottom;
-            position: relative;
+            display: flex;
 
-            .trailer-btn{
-                position: absolute;
-                bottom: $grid-gutter;
-                left: $grid-gutter;
+            .text{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .center{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    max-width: 450px;
+
+                    h6{
+                        text-transform: uppercase;
+
+                        img{
+                            display: inline-block;
+                            max-width: 200px;
+                            margin-right: 10px;
+                            vertical-align: top;
+                        }
+                    }
+
+                    .title{
+                        border-top: 1px solid theme-color(white);
+                        border-bottom: 1px solid theme-color(white);
+                        padding: $grid-gutter / 2 0;
+                        margin: $grid-gutter / 2 0;
+
+                        h1{
+                            text-transform: uppercase;
+                            font-size: 4em;
+                            letter-spacing: .1em;
+                        }
+                    }
+                }
+
+                .bottom{
+                    text-align: center;
+                    padding: $grid-gutter;
+                    animation-delay: 1s;
+                    opacity: 0;
+                }
+            }
+
+            .image{
+                flex: 1;
+                background-size: cover;
+                background-position: center bottom;
             }
 
             @include media-breakpoint-down(sm){
@@ -22,6 +73,10 @@
         }
 
         &#watch{
+            background: theme-color(black);
+            padding-bottom: $grid-gutter * 2;
+            margin-bottom: 0;
+
             p{
                 font-size: 1.3em;
                 margin-bottom: $grid-gutter;
@@ -33,9 +88,18 @@
         }
 
         &#carousel{
+            background: theme-color(black);
             position: relative;
             margin: 0 auto 100px;
             padding-top: 0;
+            padding-bottom: $grid-gutter;
+
+            .caption{
+                font-size: .8em;
+                line-height: 1.3;
+                text-align: center;
+                margin-top: 10px;
+            }
 
             .arrow{
                 position: absolute;
@@ -79,12 +143,20 @@
                 opacity: .5;
                 transition: opacity .3s;
 
-                &.slick-current{
-                    opacity: 1;
-                }
-
                 img{
                     width: 100%;
+                }
+
+                p{
+                    opacity: 0;
+                }
+
+                &.slick-current{
+                    opacity: 1;
+
+                    p{
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -97,6 +169,12 @@
         }
 
         &#read{
+            p{
+                &:first-child{
+                    font-size: 1.2em;
+                }
+            }
+
             img{
                 display: block;
                 max-height: 500px;
