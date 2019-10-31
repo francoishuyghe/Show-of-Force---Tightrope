@@ -14,5 +14,7 @@
             @include('partials.trailer-button')
         </div>
     </div>
-    <div class="image" style="background-image: url({{$data['banner_image']['url']}})"></div>
+    <div class="image" style="background-image: url({{$data['banner_image']['url']}})">
+        <div class="caption">{{ $data['banner_image']['caption'] }}</div>
+    </div>
 </section>

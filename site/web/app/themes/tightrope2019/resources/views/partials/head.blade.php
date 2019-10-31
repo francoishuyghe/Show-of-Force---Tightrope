@@ -14,4 +14,6 @@
 
   <script src="https://kit.fontawesome.com/06bd7d8090.js" crossorigin="anonymous"></script>
 
+  <script type="text/javascript" src="@asset('fonts/acherus/fonts.js')"></script>
+
 </head>

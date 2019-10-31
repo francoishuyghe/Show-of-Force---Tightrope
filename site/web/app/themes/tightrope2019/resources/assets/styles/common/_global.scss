@@ -1,7 +1,7 @@
 body{
     background: theme-color(darkblue);
     color: theme-color(white);
-    font-family: 'Acherus Grotesque', Tahoma, Verdana, sans-serif;
+    font-family: AcherusGrotesque, Tahoma, Verdana, sans-serif;
 
     &:not(.home) > .wrap{
         min-height: 100vh;
@@ -36,14 +36,14 @@ h2, h4{
     }
 }
 
-h2{
-    &:after{
-        content: ' —'
-    }
-}
-
 p{
     line-height: 2;
+}
+
+.caption{
+    font-size: .8em;
+    line-height: 1.3;
+    color: theme-color(grey);
 }
 
 a.btn{

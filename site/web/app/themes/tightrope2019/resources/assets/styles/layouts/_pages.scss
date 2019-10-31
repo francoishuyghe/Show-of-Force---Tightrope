@@ -61,6 +61,12 @@
                 flex: 1;
                 background-size: cover;
                 background-position: center bottom;
+
+                .caption{
+                    position: absolute;
+                    bottom: $grid-gutter / 2;
+                    right: $grid-gutter / 2;
+                }
             }
 
             @include media-breakpoint-down(sm){
@@ -68,6 +74,7 @@
 
                 .text{
                     flex: 0;
+                    padding-top: 20px;
 
                     .center{
                         .title{
@@ -114,8 +121,6 @@
             padding-bottom: $grid-gutter;
 
             .caption{
-                font-size: .8em;
-                line-height: 1.3;
                 text-align: center;
                 margin-top: 10px;
             }
