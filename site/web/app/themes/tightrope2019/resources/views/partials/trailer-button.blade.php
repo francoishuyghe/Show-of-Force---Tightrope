@@ -1,10 +1,11 @@
 <div class="trailer-btn">
-        <a><img src="@asset('images/play-button.svg')"></a> Watch the trailer
+        {{-- <a><img src="@asset('images/play-button.svg')"></a> Watch the trailer --}}
+        Trailer Coming Soon
     </div>
-    <div class="trailer-player">
+    {{-- <div class="trailer-player">
         <div class="container">
             <div class="player-wrap">
-            <?php
+            @php
 
             // Load value.
             $iframe = $data['trailer'];
@@ -30,7 +31,7 @@
             
             // Display customized HTML.
             echo $iframe;
-            ?>
+            @endphp
         </div>
-        </div>
+        </div> --}}
     </div>
