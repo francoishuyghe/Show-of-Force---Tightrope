@@ -1,9 +1,10 @@
 <div class="trailer-btn">
-        <a><img src="@asset('images/play-button.svg')"></a> Watch the trailer
-    </div>
-    <div class="trailer-player">
-        <div class="container">
-            <div class="player-wrap">
+    <a><img src="@asset('images/play-button.svg')"></a> Watch the trailer
+</div>
+
+<div class="trailer-player">
+    <div class="container">
+        <div class="player-wrap">
             @php
 
             // Load value.
@@ -32,5 +33,5 @@
             echo $iframe;
             @endphp
         </div>
-        </div> 
-    </div>
+    </div> 
+</div>
