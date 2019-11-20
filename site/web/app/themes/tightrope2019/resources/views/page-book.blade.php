@@ -5,7 +5,7 @@
     @while(have_posts()) @php the_post() @endphp
 
     <section id="buy">
-      <h3 class="tagline">{{ $data['tagline'] }}</h3>
+      {{-- <h3 class="tagline">{{ $data['tagline'] }}</h3> --}}
       <div class="row">
           <div class="col-md-4">
               <img src="{{ $data['book_cover']['url']}}" />
