@@ -15,6 +15,7 @@
         </div>
     </div>
     <div class="image" style="background-image: url({{$data['banner_image']['url']}})">
+        <div class="logo"><img src="@asset('images/logo-VPM_PBS.png')"/></div>
         <div class="caption">{{ $data['banner_image']['caption'] }}</div>
     </div>
 </section>

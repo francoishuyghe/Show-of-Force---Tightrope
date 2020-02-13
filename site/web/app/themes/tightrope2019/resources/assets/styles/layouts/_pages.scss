@@ -65,6 +65,17 @@
                 flex: 1;
                 background-size: cover;
                 background-position: center bottom;
+                position: relative;
+
+                .logo{
+                    position: absolute;
+                    bottom: $grid-gutter / 2;
+                    left: $grid-gutter / 2;
+
+                    img{
+                        width: 120px;
+                    }
+                }
 
                 .caption{
                     position: absolute;
